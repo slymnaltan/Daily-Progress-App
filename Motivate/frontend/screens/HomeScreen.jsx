@@ -35,7 +35,6 @@ const HomeScreen = () => {
     }
   }, [dispatch, isAuthenticated]);
 
-  // Update inputs when entry data changes
   useEffect(() => {
     if (entry) {
       setNote(entry.note || "");
@@ -51,7 +50,7 @@ const HomeScreen = () => {
     }
   }, [entryError, dispatch]);
 
-  // Save entry and clear inputs on success
+  
   const handleSaveEntry = () => {
     if (hoursWorked && isNaN(Number(hoursWorked))) {
       Alert.alert("Hata", "Lütfen çalışılan saat için geçerli bir sayı girin");
