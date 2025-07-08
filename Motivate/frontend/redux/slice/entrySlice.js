@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const API_BASE_URL = "http://192.168.1.104:5000";
+const API_BASE_URL = "http://localhost:5000";
 
 // Token'ı ayarla
 const setAuthHeader = async () => {
