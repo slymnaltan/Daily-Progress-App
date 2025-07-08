@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const API_URL = "http://192.168.1.104:5000/api/auth";
+const API_URL = "http://localhost:5000/api/auth";
 
 // REGISTER
 export const registerUser = createAsyncThunk("auth/registerUser", async (userData, { rejectWithValue }) => {
