@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // BASE URL ayarı
-const BASE_URL = "http://192.168.1.104:5000/api/tasks";
+const BASE_URL = "http://localhost:5000/api/tasks";
 
 // GET TASKS
 export const fetchTasks = createAsyncThunk("tasks/fetch", async (_, { getState }) => {
